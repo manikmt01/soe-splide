@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOE</title>
+
+  <!-- favicon  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon/site.webmanifest" />
+
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="./slick/slick-theme.css">
+  <!-- swiper css -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+  <!-- custom font start  -->
+  <link rel="stylesheet" href="./fonts/web-clash-display/css/clash-display.css" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
+    <img src="./images/soe-logo.png" alt="soe-logo" />
+    <div
+      class="w-16 h-16 border-4 border-gray-300 rounded-full spinner border-t-blue-500 absolute left-0 right-0 m-auto">
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white py-2.5 sticky top-0 z-30 lg:shadow-none shadow-xl">
+    <!-- desktop nav -->
+    <div class="container flex flex-row justify-between gap-5 lg:gap-8 items-center">
+      <a href="index.html"><img src="./images/soe-logo.png" alt="soe" class="xl:w-auto w-[116px]" /></a>
+
+      <div class="md:hidden">
+        <button
+          class="justify-center text-text-body-primary text-xs font-medium font-Inter leading-none text-center flex flex-col gap-1"
+          data-mobile-menu-toggle="">
+          <img src="./images/menu.svg" alt="menu" />
+        </button>
+      </div>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-4 items-center">
+        <ul class="flex flex-row gap-5 lg:gap-8 items-center">
+          <li>
+            <a href="./development.html"
+              class="text-slate-800 text-base lg:text-lg font-medium leading-7 transition-all px-1.5 py-1 hover:text-slate-500 active:text-slate-500 focus:text-slate-500 active:text-slate-500 focus:text-slate-500">Desarrollo</a>
+          </li>
+          <li class="relative dropdown transition-all">
+            <button
+              class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-slate-800 text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-slate-500 active:text-slate-500 focus:text-slate-500"
+              data-dropdown>
+              Sector salud
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                class="transition-all">
+                <path d="M4 6L8 10L12 6" stroke="#425464" stroke-width="1.75" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu dropdown-content transition-all right-0 w-[250px] p-3 bg-white rounded-xl shadow-custom absolute">
+              <ul class="flex flex-col">
+                <li>
+                  <a href="./systems.html"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                    Sistemas RIS y PACs
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./partner.html"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                    Growth partner
+                  </a>
+                </li>
+                <li>
+                  <a href="./call-center.html"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                    Call center
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="relative dropdown transition-all">
+            <button
+              class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-slate-800 text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-slate-500"
+              data-dropdown>
+              Sector empresarial
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                class="transition-all">
+                <path d="M4 6L8 10L12 6" stroke="#425464" stroke-width="1.75" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu dropdown-content transition-all right-0 w-[250px] p-3 bg-white rounded-xl shadow-custom absolute">
+              <ul class="flex flex-col">
+                <li>
+                  <a href="./hardware.html"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                    Hardware corporativo
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./soluciones.html"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                    Provisión de tecnología 
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="relative dropdown group transition-all">
+            <button
+              class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-lg font-medium leading-7 px-2 lg:px-4 py-1 gap-1 bg-slate-500 rounded-lg linkify"
+              data-href="./contactanos.html" data-dropdown>
+              Contáctanos
+            </button>
+            <div
+              class="dropdown-menu dropdown-content absolute group-hover:!block transition-all right-0 w-[350px] p-3 bg-white rounded-xl shadow-custom">
+              <ul class="flex flex-col">
+                <li>
+                  <a href="mailto:+52 664 980 03 03"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="">
+                      <img src="./images/call.svg" alt="call" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">Atención telefónica</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">+52 (664) 980 03 03</span>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://wa.link/tjyxcl"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="">
+                      <img src="./images/whatsapp-dropdown.svg" alt="whatsapp" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">WhatsApp</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">+52 (664) 980 03 03</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info@soe.com.mx"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="">
+                      <img src="./images/mail-dropdown.svg" alt="mail" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">Enviar mensaje</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">info@soe.com.mx</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href=""
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="">
+                      <img src="./images/location-dropdown.svg" alt="location" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">Dirección</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">Calle Ejemplo #123,
+                        Tijuana, B.C.</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile Offcanvas -->
+    <div class="offcanvas fixed inset-0 bg-white bg-opacity-50 h-screen overflow-y-auto z-50 md:hidden" id="mobileMenu">
+      <div class="bg-white w-full max-w-full h-full py-4 relative">
+        <div class="flex flex-row items-center justify-between px-4">
+          <a href="">
+            <img src="./images/soe-logo.png" alt="logo" class="w-[120px]" />
+          </a>
+          <button class="cursor-pointer" data-close-mobile>
+            <img src="./images/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="mt-5 px-4">
+          <nav class="flex space-x-4 items-center">
+            <ul class="flex flex-col gap-5">
+              <li class="flex flex-col justify-start text-start">
+                <a href="./development.html"
+                  class="text-slate-800 text-base lg:text-lg font-medium leading-7 transition-all px-1.5 py-1 hover:text-slate-500 active:text-slate-500 focus:text-slate-500">Desarrollo</a>
+              </li>
+
+              <li class="relative dropdown transition-all flex flex-col justify-start">
+                <button
+                  class="dropdown-toggle flex justify-start items-center transition-all cursor-pointer text-slate-800 text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-slate-500 active:text-slate-500 focus:text-slate-500"
+                  data-dropdown>
+                  Sector salud
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    class="transition-all">
+                    <path d="M4 6L8 10L12 6" stroke="#425464" stroke-width="1.75" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <div class="dropdown-menu dropdown-content transition-all w-full p-3 rounded-xl">
+                  <ul class="flex flex-col">
+                    <li>
+                      <a href="./systems.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                        Sistemas RIS y PACs
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                        Growth partner
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./call-center.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                        Call center
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="relative dropdown transition-all flex flex-col justify-start">
+                <button
+                  class="dropdown-toggle flex justify-start items-center transition-all cursor-pointer text-slate-800 text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-slate-500 active:text-slate-500 focus:text-slate-500"
+                  data-dropdown>
+                  Sector empresarial
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    class="transition-all">
+                    <path d="M4 6L8 10L12 6" stroke="#425464" stroke-width="1.75" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <div class="dropdown-menu dropdown-content transition-all w-full p-3 bg-white rounded-xl">
+                  <ul class="flex flex-col">
+                    <li>
+                      <a href="./hardware.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                        Hardware corporativo
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="./soluciones.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                        Provisión de tecnología 
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="pt-6">
+          <div class="border-b border-[#E7EAEC]"></div>
+          <div class="px-4 py-6 flex flex-row justify-around">
+            <ul class="space-y-3">
+              <li class="flex flex-row gap-1 items-center">
+                <img src="./images/list-menu.svg" alt="recursos" />
+                <h4 class="text-basic-black text-base font-DMSans font-medium">
+                  Recursos
+                </h4>
+              </li>
+              <li>
+                <a href="#" class="text-basic-black text-sm font-DMSans font-normal">Casos de éxito</a>
+              </li>
+              <li>
+                <a href="#" class="text-basic-black text-sm font-DMSans font-normal">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="text-basic-black text-sm font-DMSans font-normal">Únete a SOE</a>
+              </li>
+            </ul>
+            <ul class="space-y-3">
+              <li class="flex flex-row gap-1 items-center">
+                <img src="./images/shield-menu.svg" alt="recursos" />
+                <h4 class="text-basic-black text-base font-DMSans font-medium">
+                  Aviso legal
+                </h4>
+              </li>
+              <li>
+                <a href="#" class="text-basic-black text-sm font-DMSans font-normal">Aviso de privacidad</a>
+              </li>
+              <li>
+                <a href="#" class="text-basic-black text-sm font-DMSans font-normal">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="text-basic-black text-sm font-DMSans font-normal">Términos y condiciones</a>
+              </li>
+            </ul>
+          </div>
+          <div class="px-4">
+            <a href="./contactanos.html"
+              class="flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-lg font-medium leading-7 px-2 lg:px-4 py-[10px] gap-1 bg-slate-500 rounded-lg">
+              Contáctanos
+            </a>
+            <div class="pt-6">
+              <ul class="flex flex-col">
+                <li>
+                  <a href="mailto:+52 664 980 03 03"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="mt-1">
+                      <img src="./images/call.svg" alt="call" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">Atención telefónica</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">+52 (664) 980 03 03</span>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://wa.link/tjyxcl"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="mt-1">
+                      <img src="./images/whatsapp-dropdown.svg" alt="whatsapp" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">WhatsApp</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">+52 (664) 980 03 03</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info@soe.com.mx"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="mt-1">
+                      <img src="./images/mail-dropdown.svg" alt="mail" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">Enviar mensaje</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">info@soe.com.mx</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href=""
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="mt-1">
+                      <img src="./images/location-dropdown.svg" alt="location" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">Dirección</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">Calle Ejemplo #123,
+                        Tijuana, B.C.</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- tectnologia start -->
+    <section class="tecnologia">
+      <div class="py-12 md:py-15 lg:py-24">
+        <!-- tab mobile -->
+        <div class="w-full space-y-9 md:space-y-[48px] lg:space-y-[64px]">
+          <div class="container">
+            <div class="flex flex-col items-center gap-6">
+              <h1
+                class="text-basic-black text-[46px] md:text-7xl lg:text-[84px] font-medium font-ClashDisplay leading-[54px] md:leading-[84px] lg:leading-[92px] lg:w-[665px] max-w-full text-center">
+                Call center
+              </h1>
+              <div class="flex flex-col gap-6 w-full">
+                <p
+                  class="text-gray-dark text-base lg:text-lg font-normal leading-7 text-center lg:max-w-full max-w-[430px] lg:mx-0 mx-auto">
+                  Soluciones para call centers que mejoran la eficiencia y la
+                  experiencia del cliente.
+                </p>
+
+                <a href="contactanos.html"
+                  class="w-full max-w-[403px] min-h-16 max-h-16 p-4 bg-slate-500 border border-slate-500 hover:bg-transparent hover:text-slate-500 active:text-slate-500 focus:text-slate-500 rounded-lg inline-flex flex-col justify-center items-center gap-3.5 text-center text-white text-lg font-medium leading-7 self-center focus:bg-white focus:shadow transition-colors duration-300">
+                  Conoce más
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="px-4 md:px-8 lg:px-3">
+            <img src="./images/call-center-01.png" alt="call-center-01"
+              class="rounded-xl w-full min-h-[330px] md:min-h-[516px] object-cover hidden lg:block" />
+            <img src="./images/call-center-phone-banner.png" alt="call-center-01"
+              class="rounded-xl w-full block lg:hidden" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- tecnologia end -->
+    <section class="py-12 md:py-15 lg:py-24">
+      <div class="container space-y-9 md:space-y-16">
+        <!-- text -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-6 text-center lg:text-start items-end lg:max-w-full max-w-[570px] lg:mx-0 mx-auto">
+          <h2
+            class="text-basic-black text-[34px] md:text-4xl xl:text-5xl font-medium font-ClashDisplay leading-[46px] md:leading-[48px] xl:leading-[60px]">
+            ¿Qué incluye nuestro servicio de Call Center?
+          </h2>
+          <p class="text-gray-dark text-base md:text-lg font-normal md:leading-7 w-full lg:max-w-[596px]">
+            Somos una empresa especializada en soluciones de atención al
+            cliente y soporte técnico, ofreciendo una experiencia superior
+            para empresas de todos los sectores.
+          </p>
+        </div>
+        <!-- cards -->
+        <div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            <!-- card 1 -->
+            <div
+              class="flex flex-col justify-between flex-grow gap-6 bg-accent-tertiary p-6 rounded-xl min-h-[200px] md:min-h-[275px] lg:min-h-[275px]">
+              <div>
+                <img src="./images/plus-green.svg" alt="plus" class="min-w-8 min-h-8" />
+              </div>
+              <h3
+                class="text-basic-black text-2xl md:text-[28px] lg:text-4xl leading-8 md:leading-9 lg:leading-12 font-medium font-ClashDisplay max-w-[520px]">
+                Atención de llamadas entrantes y salientes
+              </h3>
+            </div>
+            <!-- card 2 -->
+            <div
+              class="flex flex-col justify-between flex-grow gap-6 bg-accent-tertiary p-6 rounded-xl min-h-[200px] md:min-h-[275px] lg:min-h-[275px]">
+              <div>
+                <img src="./images/plus-green.svg" alt="plus" class="min-w-8 min-h-8" />
+              </div>
+              <h3
+                class="text-basic-black text-2xl md:text-[28px] lg:text-4xl leading-8 md:leading-9 lg:leading-12 font-medium font-ClashDisplay max-w-[520px]">
+                Confirmación y reprogramación de citas
+              </h3>
+            </div>
+            <!-- card 3 -->
+            <div
+              class="flex flex-col justify-between flex-grow gap-6 bg-accent-tertiary p-6 rounded-xl min-h-[200px] md:min-h-[275px] lg:min-h-[275px]">
+              <div>
+                <img src="./images/plus-green.svg" alt="plus" class="min-w-8 min-h-8" />
+              </div>
+              <h3
+                class="text-basic-black text-2xl md:text-[28px] lg:text-4xl leading-8 md:leading-9 lg:leading-12 font-medium font-ClashDisplay max-w-[520px]">
+                Recordatorios vía llamada o WhatsApp
+              </h3>
+            </div>
+            <!-- card 4 -->
+            <div
+              class="flex flex-col justify-between flex-grow gap-6 bg-accent-tertiary p-6 rounded-xl min-h-[200px] md:min-h-[275px] lg:min-h-[275px]">
+              <div>
+                <img src="./images/plus-green.svg" alt="plus" class="min-w-8 min-h-8" />
+              </div>
+              <h3
+                class="text-basic-black text-2xl md:text-[28px] lg:text-4xl leading-8 md:leading-9 lg:leading-12 font-medium font-ClashDisplay max-w-[520px]">
+                Canal de atención para dudas frecuentes
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-12 md:py-15 lg:py-24">
+      <div class="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3">
+        <!-- single item start  -->
+        <div
+          class="flex flex-col justify-end p-6 rounded-tl-[120px] rounded-tr-xl rounded-bl-xl rounded-br-xl bg-slate-500 min-h-[250px] md:min-h-[360px] gap-6 bg-[url('../images/shape-1.svg')] bg-top-right bg-no-repeat lg:col-span-1 md:col-span-1 col-span-1">
+          <div class="">
+            <img src="./images/learn-icon.svg" alt="atencion" />
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <h4
+              class="text-white text-xl md:text-[22px] lg:text-2xl font-medium font-ClashDisplay md:leading-7.5 lg:leading-9">
+              Atención profesional en tiempo real
+            </h4>
+          </div>
+        </div>
+        <!-- single item end -->
+
+        <!-- single item start  -->
+        <div
+          class="flex flex-col justify-between p-6 rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-[120px] bg-gray-200 min-h-[250px] md:min-h-[360px] gap-6 bg-[url('../images/shape-2.svg')] bg-bottom-right bg-no-repeat lg:col-span-1 md:col-span-1 col-span-1">
+          <div class="order-2">
+            <img src="./images/chat-icon.svg" alt="desarrollo" />
+          </div>
+          <div class="flex flex-col gap-1.5 order-1">
+            <h4
+              class="text-slate-800 text-xl md:text-[22px] lg:text-2xl font-medium font-ClashDisplay md:leading-7.5 lg:leading-9">
+              Personal capacitado en lenguaje médico o corporativo
+            </h4>
+          </div>
+        </div>
+        <!-- single item end -->
+        <!-- single item start  -->
+        <div
+          class="flex flex-col justify-between p-6 rounded-tl-xl rounded-tr-[120px] rounded-bl-xl rounded-br-xl bg-accent-primary min-h-[250px] sm:min-h-[280px] lg:min-h-[360px] gap-6 bg-[url('../images/shape-1.svg')] bg-top-right bg-no-repeat lg:col-span-1 md:col-span-2 col-span-1">
+          <div class="">
+            <img src="./images/automizer-icon.svg" alt="atencion" />
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <h4
+              class="text-white text-xl md:text-[22px] lg:text-2xl font-medium font-ClashDisplay md:leading-7.5 lg:leading-9">
+              Reducción de carga operativa para tu equipo interno
+            </h4>
+          </div>
+        </div>
+        <!-- single item end -->
+        <!-- new grid -->
+        <div class="lg:col-span-3 md:col-span-2 col-span-1 flex flex-col md:flex-row justify-between gap-3">
+          <!-- single item start  -->
+          <div
+            class="flex flex-col justify-between p-6 rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-[120px] bg-gray-200 lg:bg-accent-primary min-h-[250px] md:min-h-[360px] gap-6 bg-[url('../images/shape-2.svg')] bg-bottom-right bg-no-repeat w-full md:w-1/2">
+            <div class="flex flex-col gap-1.5">
+              <h4
+                class="text-slate-800 lg:text-white text-xl md:text-[22px] lg:text-2xl font-medium font-ClashDisplay md:leading-7.5 lg:leading-9">
+                Mejora en la experiencia del paciente o cliente
+              </h4>
+            </div>
+            <div class="">
+              <img src="./images/face-smile.svg" alt="atencion" />
+            </div>
+          </div>
+          <!-- single item end -->
+          <!-- single item start  -->
+          <div
+            class="flex flex-col justify-end p-6 rounded-tl-[120px] rounded-tr-xl rounded-bl-xl rounded-br-xl bg-slate-500 min-h-[250px] md:min-h-[360px] gap-6 bg-[url('../images/shape-1.svg')] bg-top-right bg-no-repeat w-full md:w-1/2">
+            <div class="">
+              <img src="./images/file-check.svg" alt="atencion" />
+            </div>
+            <div class="flex flex-col gap-1.5">
+              <h4
+                class="text-white text-xl md:text-[22px] lg:text-2xl font-medium font-ClashDisplay md:leading-7.5 lg:leading-9">
+                Reportes periódicos de desempeño y llamadas
+              </h4>
+            </div>
+          </div>
+          <!-- single item end -->
+        </div>
+      </div>
+    </section>
+    <!-- ¿Por qué un software a la medida?  -->
+    <section class="software py-12 md:py-15 lg:py-24">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-8 lg:grid-cols-11 gap-6 lg:gap-[18px]">
+          <!-- 1 -->
+
+          <div class="col-span-1 md:col-span-8 lg:col-span-3 flex flex-col lg:flex-col gap-6 md:gap-6">
+            <!-- single item start  -->
+            <div class="w-full h-full gap-6">
+              <h2
+                class="text-slate-800 text-[34px] md:text-4xl xl:text-5xl font-medium font-ClashDisplay leading-[46px] xl:leading-[60px] text-center lg:text-start">
+                Modalidades disponibles
+              </h2>
+            </div>
+            <!-- single item start  -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 w-full">
+              <!-- single item end  -->
+              <div
+                class="w-full h-[150px] sm:min-h-[200px] lg:min-h-[152px] p-6 bg-gray-light rounded-xl flex flex-col justify-between items-start sm:h-full gap-7.5 lg:gap-6">
+                <h4
+                  class="text-basic-black font-ClashDisplay font-medium text-xl leading-6 md:text-[22px] md:leading-[30px] xl:text-2xl xl:leading-9">
+                  Call center para clínicas
+                </h4>
+                <p class="self-stretch justify-start text-slate-800 text-base md:text-lg font-normal leading-7">
+                  agendamiento, seguimiento y notificaciones
+                </p>
+              </div>
+              <!-- single item start  -->
+              <!-- single item end  -->
+              <div
+                class="w-full h-[150px] sm:min-h-[200px] lg:min-h-[152px] p-6 bg-gray-light rounded-xl flex flex-col justify-between items-start sm:h-full gap-7.5 lg:gap-6">
+                <h4
+                  class="text-basic-black font-ClashDisplay font-medium text-xl leading-6 md:text-[22px] md:leading-[30px] xl:text-2xl xl:leading-9">
+                  Call center empresarial
+                </h4>
+                <p class="self-stretch justify-start text-slate-800 text-base md:text-lg font-normal leading-7">
+                  atención a clientes, soporte y gestión de leads
+                </p>
+              </div>
+              <!-- single item start  -->
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="col-span-1 md:col-span-8 lg:col-span-5 relative rounded-xl w-full h-full">
+            <img src="./images/call-center-02.png" alt="hardware"
+              class="w-full max-h-[245px] md:max-h-[400px] lg:min-h-full object-cover rounded-xl hidden md:block" />
+            <img src="./images/call-center-2-phone.png" alt="hardware" class="w-full rounded-xl block md:hidden" />
+          </div>
+          <!-- 3 -->
+          <div class="col-span-1 md:col-span-8 lg:col-span-3 flex flex-col md:flex-row lg:flex-col gap-4 md:gap-6">
+            <!-- single item start  -->
+            <div
+              class="w-full md:w-1/2 lg:w-full p-6 bg-gray-light rounded-xl flex flex-col justify-between items-start sm:h-full gap-7.5 lg:gap-6 sm:min-h-auto min-h-[150px]">
+              <h4
+                class="text-basic-black font-ClashDisplay font-medium text-xl leading-6 md:text-[22px] md:leading-[30px] xl:text-2xl xl:leading-9">
+                Servicio parcial o integral
+              </h4>
+              <p class="self-stretch justify-start text-slate-800 text-base md:text-lg font-normal leading-7">
+                solo confirmaciones, o 24/7
+              </p>
+            </div>
+            <!-- single item start  -->
+            <!-- single item end  -->
+            <div
+              class="w-full md:w-1/2 lg:w-full p-6 bg-gray-light rounded-xl flex flex-col justify-between items-start sm:h-full gap-7.5 lg:gap-6 sm:min-h-auto min-h-[150px]">
+              <h4
+                class="text-basic-black font-ClashDisplay font-medium text-xl leading-6 md:text-[22px] md:leading-[30px] xl:text-2xl xl:leading-9">
+                Idiomas disponibles
+              </h4>
+              <p class="self-stretch justify-start text-slate-800 text-base md:text-lg font-normal leading-7">
+                Español <br />Inglés
+              </p>
+            </div>
+            <!-- single item start  -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ¿Por qué un software a la medida? end -->
+    <!-- solutions start -->
+    <section class="solutions py-12 md:py-15 lg:py-24 bg-accent-secondary">
+      <div class="container flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
+        <div class="w-full lg:max-w-[595px] sm:max-w-[570px] space-y-6 text-center lg:text-start">
+          <h4
+            class="text-[34px] md:text-4xl lg:text-5xl font-medium leading-11.5 md:leading-12 lg:leading-15 text-basic-white font-ClashDisplay">
+            ¿Quieres mejorar tu atención sin cargar a tu equipo?
+          </h4>
+          <p class="font-normal text-base md:text-lg text-basic-white leading-7 md:leading-6 w-full">
+            Ofrece una experiencia profesional a tus usuarios desde la primera
+            llamada.
+          </p>
+          <div>
+            <a href="#"
+              class="lg:px-16 px-[26px] md:py-3 py-4 bg-basic-white text-accent-secondary hover:text-basic-white text-base lg:text-lg font-medium rounded-lg inline-flex items-center justify-center hover:bg-accent-secondary transition duration-300 border border-basic-white sm:w-auto w-full">
+              Solicita una demo gratuita</a>
+          </div>
+        </div>
+        <div class="w-full">
+          <img src="./images/call-center-03.png" alt="cta-banner"
+            class="w-full max-h-[245px] md:max-h-[400px] lg:min-h-[400px] object-cover rounded-xl" />
+        </div>
+      </div>
+    </section>
+    <!-- solutions end -->
+    <!-- frecuentes preguntas start -->
+    <section class="frecuentes py-12 md:py-15 lg:py-24">
+      <!-- Optional container just for heading/alignment (not wrapping the slider) -->
+      <div class="container flex flex-col md:flex-row items-start justify-between mb-8 gap-6">
+        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-start gap-6 w-full">
+          <h2
+            class="text-basic-black text-[34px] md:text-4xl xl:text-5xl font-medium font-ClashDisplay leading-[46px] md:leading-[48px] xl:leading-[60px]">
+            Preguntas frecuentes
+          </h2>
+
+          <!-- doc -->
+          <div class="flex flex-col items-start gap-6">
+            <p class="text-gray-dark text-base md:text-lg font-normal md:leading-7 w-full lg:max-w-[492px]">
+              Encuentra respuestas claras sobre nuestros servicios, procesos y
+              tecnologías. Si no ves lo que buscas, contáctanos y te
+              ayudaremos con gusto.
+            </p>
+            <!-- 👇 Custom Pagination Dots -->
+            <div class="flex md:hidden lg:flex justify-start gap-4 items-center mb-6">
+              <button
+                class="fPrev cursor-pointer group w-12 h-12 rounded-full border border-gray-medium flex items-center justify-center hover:bg-[#13547A] transition">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  class="w-6 h-6 stroke-[#284A70] group-hover:stroke-basic-white transition">
+                  <path d="M20 12H4M4 12L10 18M4 12L10 6" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+
+              <button
+                class="fNext cursor-pointer group w-12 h-12 rounded-full border border-gray-medium flex items-center justify-center hover:bg-accent-primary transition">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  class="w-6 h-6 stroke-[#284A70] group-hover:stroke-basic-white transition">
+                  <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- 👇 Custom Pagination Dots -->
+        <div class="hidden md:flex lg:hidden justify-start gap-4 items-center">
+          <button
+            class="frecuentes-prev cursor-pointer group w-12 h-12 rounded-full border border-gray-medium flex items-center justify-center hover:bg-[#13547A] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              class="w-6 h-6 stroke-[#284A70] group-hover:stroke-basic-white transition">
+              <path d="M20 12H4M4 12L10 18M4 12L10 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <button
+            class="frecuentes-next cursor-pointer group w-12 h-12 rounded-full border border-gray-medium flex items-center justify-center hover:bg-accent-primary transition">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              class="w-6 h-6 stroke-[#284A70] group-hover:stroke-basic-white transition">
+              <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="relative w-full">
+        <!-- Slider wrapper with only left container spacing -->
+        <div class="overflow-x-auto pl-4 sm:pl-8 xl:pl-16 2xl:pl-[calc((100vw-1216px)/2)]">
+          <!-- Swiper Container -->
+          <div class="swiper frecuentesSwiper">
+            <div class="frecuentes-wrapper overflow-x-visible">
+              <!-- Slide 1 -->
+              <div class="slick-slide">
+                <div
+                  class="relative w-full flex flex-col justify-end items-start rounded-xl p-6 bg-gray-light hover:bg-accent-primary text-white overflow-hidden group/slider groupItemNew h-[520px] md:h-[686px]">
+                  <!-- main -->
+                  <div class="inline-block group-hover/slider:hidden transition-opacity duration-400 item1">
+                    <h4
+                      class="text-2xl md:text-[28px] xl:text-4xl leading-8 md:leading-9 font-medium max-w-[372px] text-basic-black font-ClashDisplay">
+                      ¿Cómo saber qué solución es la adecuada para mi
+                      organización?
+                    </h4>
+                    <div class="absolute top-6 right-6">
+                      <img src="./images/arrow-up-right.svg" alt="arrow-up-right" class="w-6 h-8 md:w-12 md:h-12" />
+                    </div>
+                  </div>
+                  <!-- hover -->
+                  <div class="hidden group-hover/slider:inline-block transition-opacity duration-400 item2">
+                    <div class="absolute top-6 right-6">
+                      <img src="./images/arrow-down-left.svg" alt="arrow-up-left" class="w-6 h-8 md:w-12 md:h-12" />
+                    </div>
+                    <h4
+                      class="text-2xl md:text-[28px] xl:text-4xl leading-8 md:leading-9 font-medium max-w-[372px] text-white font-ClashDisplay sm:block hidden">
+                      ¿Cómo saber qué solución es la adecuada para mi
+                      organización?
+                    </h4>
+                    <p class="font-normal text-sm md:text-base text-basic-white leading-5 md:leading-6 pt-6">
+                      Antes de comenzar cualquier proyecto, analizamos tus
+                      necesidades específicas mediante una consultoría inicial
+                      gratuita. Evaluamos el sector en el que operas, tus
+                      objetivos, y el estado actual de tu infraestructura o
+                      procesos. Con base en ese diagnóstico, te proponemos una
+                      solución personalizada que se alinee con tus metas, ya
+                      sea en tecnología médica, empresarial o desarrollo de
+                      software. Nuestro enfoque es ofrecer solo lo que
+                      realmente necesitas, sin soluciones genéricas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="slick-slide">
+                <div
+                  class="relative w-full flex flex-col justify-end items-start rounded-xl p-6 bg-gray-light hover:bg-accent-primary text-white overflow-hidden group/slider groupItemNew h-[520px] md:h-[686px]">
+                  <!-- main -->
+                  <div class="inline-block group-hover/slider:hidden transition-opacity duration-400 item1">
+                    <h4
+                      class="text-2xl md:text-[28px] xl:text-4xl leading-8 md:leading-9 font-medium max-w-[372px] text-basic-black font-ClashDisplay">
+                      ¿Cuál es el proceso para iniciar un proyecto con
+                      ustedes?
+                    </h4>
+                    <div class="absolute top-6 right-6">
+                      <img src="./images/arrow-up-right.svg" alt="arrow-up-right" class="w-6 h-8 md:w-12 md:h-12" />
+                    </div>
+                  </div>
+                  <!-- hover -->
+                  <div class="hidden group-hover/slider:inline-block transition-opacity duration-400 item2">
+                    <div class="absolute top-6 right-6">
+                      <img src="./images/arrow-down-left.svg" alt="arrow-up-left" class="w-6 h-8 md:w-12 md:h-12" />
+                    </div>
+                    <h4
+                      class="text-2xl md:text-[28px] xl:text-4xl leading-8 md:leading-9 font-medium max-w-[372px] text-white font-ClashDisplay sm:block hidden">
+                      ¿Cuál es el proceso para iniciar un proyecto con
+                      ustedes?
+                    </h4>
+                    <p class="font-normal text-sm md:text-base text-basic-white leading-5 md:leading-6 pt-6">
+                      Antes de comenzar cualquier proyecto, analizamos tus
+                      necesidades específicas mediante una consultoría inicial
+                      gratuita. Evaluamos el sector en el que operas, tus
+                      objetivos, y el estado actual de tu infraestructura o
+                      procesos. Con base en ese diagnóstico, te proponemos una
+                      solución personalizada que se alinee con tus metas, ya
+                      sea en tecnología médica, empresarial o desarrollo de
+                      software. Nuestro enfoque es ofrecer solo lo que
+                      realmente necesitas, sin soluciones genéricas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="slick-slide">
+                <div
+                  class="relative w-full flex flex-col justify-end items-start rounded-xl p-6 bg-gray-light hover:bg-accent-primary text-white overflow-hidden group/slider groupItemNew h-[520px] md:h-[686px]">
+                  <!-- main -->
+                  <div class="inline-block group-hover/slider:hidden transition-opacity duration-400 item1">
+                    <h4
+                      class="text-2xl md:text-[28px] xl:text-4xl leading-8 md:leading-9 font-medium max-w-[372px] text-basic-black font-ClashDisplay">
+                      ¿Qué tipo de soporte ofrecen durante y después del
+                      proyecto?
+                    </h4>
+                    <div class="absolute top-6 right-6">
+                      <img src="./images/arrow-up-right.svg" alt="arrow-up-right" class="w-6 h-8 md:w-12 md:h-12" />
+                    </div>
+                  </div>
+                  <!-- hover -->
+                  <div class="hidden group-hover/slider:inline-block transition-opacity duration-400 item2">
+                    <div class="absolute top-6 right-6">
+                      <img src="./images/arrow-down-left.svg" alt="arrow-up-left" class="w-6 h-8 md:w-12 md:h-12" />
+                    </div>
+                    <h4
+                      class="text-2xl md:text-[28px] xl:text-4xl leading-8 md:leading-9 font-medium max-w-[372px] text-white font-ClashDisplay sm:block hidden">
+                      ¿Qué tipo de soporte ofrecen durante y después del
+                      proyecto?
+                    </h4>
+                    <p class="font-normal text-sm md:text-base text-basic-white leading-5 md:leading-6 pt-6">
+                      Antes de comenzar cualquier proyecto, analizamos tus
+                      necesidades específicas mediante una consultoría inicial
+                      gratuita. Evaluamos el sector en el que operas, tus
+                      objetivos, y el estado actual de tu infraestructura o
+                      procesos. Con base en ese diagnóstico, te proponemos una
+                      solución personalizada que se alinee con tus metas, ya
+                      sea en tecnología médica, empresarial o desarrollo de
+                      software. Nuestro enfoque es ofrecer solo lo que
+                      realmente necesitas, sin soluciones genéricas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="slick-slide">
+                <div
+                  class="relative w-full flex flex-col justify-end items-start rounded-xl p-6 bg-gray-light hover:bg-accent-primary text-white overflow-hidden group/slider groupItemNew h-[520px] md:h-[686px]">
+                  <!-- main -->
+                  <div class="inline-block group-hover/slider:hidden transition-opacity duration-400 item1">
+                    <h4
+                      class="text-2xl md:text-[28px] xl:text-4xl leading-8 md:leading-9 font-medium max-w-[372px] text-basic-black font-ClashDisplay">
+                      ¿Hay costos adicionales por soporte o mantenimiento?
+                    </h4>
+                    <div class="absolute top-6 right-6">
+                      <img src="./images/arrow-up-right.svg" alt="arrow-up-right" class="w-6 h-8 md:w-12 md:h-12" />
+                    </div>
+                  </div>
+                  <!-- hover -->
+                  <div class="hidden group-hover/slider:inline-block transition-opacity duration-400 item2">
+                    <div class="absolute top-6 right-6">
+                      <img src="./images/arrow-down-left.svg" alt="arrow-up-left" class="w-6 h-8 md:w-12 md:h-12" />
+                    </div>
+                    <h4
+                      class="text-2xl md:text-[28px] xl:text-4xl leading-8 md:leading-9 font-medium max-w-[372px] text-white font-ClashDisplay sm:block hidden">
+                      ¿Hay costos adicionales por soporte o mantenimiento?
+                    </h4>
+                    <p class="font-normal text-sm md:text-base text-basic-white leading-5 md:leading-6 pt-6">
+                      Antes de comenzar cualquier proyecto, analizamos tus
+                      necesidades específicas mediante una consultoría inicial
+                      gratuita. Evaluamos el sector en el que operas, tus
+                      objetivos, y el estado actual de tu infraestructura o
+                      procesos. Con base en ese diagnóstico, te proponemos una
+                      solución personalizada que se alinee con tus metas, ya
+                      sea en tecnología médica, empresarial o desarrollo de
+                      software. Nuestro enfoque es ofrecer solo lo que
+                      realmente necesitas, sin soluciones genéricas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 5 -->
+              <div class="slick-slide">
+                <div
+                  class="relative w-full flex flex-col justify-end items-start rounded-xl p-6 bg-gray-light hover:bg-accent-primary text-white overflow-hidden group/slider groupItemNew h-[520px] md:h-[686px]">
+                  <!-- main -->
+                  <div class="inline-block group-hover/slider:hidden transition-opacity duration-400 item1">
+                    <h4
+                      class="text-2xl md:text-[28px] xl:text-4xl leading-8 md:leading-9 font-medium max-w-[372px] text-basic-black font-ClashDisplay">
+                      ¿Cómo saber qué solución es la adecuada para mi
+                      organización?
+                    </h4>
+                    <div class="absolute top-6 right-6">
+                      <img src="./images/arrow-up-right.svg" alt="arrow-up-right" class="w-6 h-8 md:w-12 md:h-12" />
+                    </div>
+                  </div>
+                  <!-- hover -->
+                  <div class="hidden group-hover/slider:inline-block transition-opacity duration-400 item2">
+                    <div class="absolute top-6 right-6">
+                      <img src="./images/arrow-down-left.svg" alt="arrow-up-left" class="w-6 h-8 md:w-12 md:h-12" />
+                    </div>
+                    <h4
+                      class="text-2xl md:text-[28px] xl:text-4xl leading-8 md:leading-9 font-medium max-w-[372px] text-white font-ClashDisplay sm:block hidden">
+                      ¿Cómo saber qué solución es la adecuada para mi
+                      organización?
+                    </h4>
+                    <p class="font-normal text-sm md:text-base text-basic-white leading-5 md:leading-6 pt-6">
+                      Antes de comenzar cualquier proyecto, analizamos tus
+                      necesidades específicas mediante una consultoría inicial
+                      gratuita. Evaluamos el sector en el que operas, tus
+                      objetivos, y el estado actual de tu infraestructura o
+                      procesos. Con base en ese diagnóstico, te proponemos una
+                      solución personalizada que se alinee con tus metas, ya
+                      sea en tecnología médica, empresarial o desarrollo de
+                      software. Nuestro enfoque es ofrecer solo lo que
+                      realmente necesitas, sin soluciones genéricas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- frecuentes preguntas end -->
+  </main>
+
+  <footer class="bg-zinc-200 bg-[url('../images/shape-footer.svg')] bg-no-repeat bg-right-top">
+    <div
+      class="container pt-[60px] md:pt-24 pb-12 grid lg:grid-cols-12 sm:grid-cols-3 grid-cols-2 lg:gap-6 gap-y-12 gap-x-3">
+      <!-- single item start  -->
+      <div class="xl:col-span-4 sm:col-span-3 col-span-2 flex flex-col gap-9">
+        <div>
+          <a href="">
+            <img src="./images/soe-logo.png" alt="soe-logo" />
+          </a>
+        </div>
+        <ul class="flex flex-col gap-4">
+          <li>
+            <a href="mailto:info@soe.com.mx"
+              class="flex flex-row items-center gap-1.5 text-slate-800 text-base font-normal leading-normal hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">
+              <span>
+                <img src="images/mail.svg" alt="mail" />
+              </span>
+              <span> info@soe.com.mx</span>
+            </a>
+          </li>
+
+          <li>
+            <a href=""
+              class="flex flex-row items-center gap-1.5 text-slate-800 text-base font-normal leading-normal hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">
+              <span>
+                <img src="images/location.svg" alt="location" />
+              </span>
+              <span> Calle Ejemplo #123, Tijuana, B.C.</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+52 664 980 03 03"
+              class="flex flex-row items-center gap-1.5 text-slate-800 text-base font-normal leading-normal hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">
+              <span>
+                <img src="images/phone.svg" alt="phone" />
+              </span>
+              <span> +52 (664) 980 03 03</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- single item end -->
+
+      <!-- Enlaces rápidos -->
+      <div class="lg:col-span-3 col-span-1">
+        <h4 class="flex items-center gap-2 text-slate-800 text-lg font-semibold font-Inter leading-normal">
+          <img src="./images/link.svg" alt="link" />
+          Enlaces rápidos
+        </h4>
+        <ul class="mt-4 space-y-2 pl-8">
+          <li>
+            <a href="#"
+              class="text-slate-600 text-base hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">Desarrollo</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-slate-600 text-base hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">Sistemas
+              RIS y PACs</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-slate-600 text-base hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">Growth
+              partner</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-slate-600 text-base hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">Call
+              center</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-slate-600 text-base hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">Hardware
+              corporativo</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-slate-600 text-base hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">Provisión
+              de tecnología</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Recursos -->
+      <div class="lg:col-span-3 col-span-1">
+        <h4 class="flex items-center gap-2 text-slate-800 text-lg font-semibold font-Inter leading-normal">
+          <img src="./images/recursos.svg" alt="recursos" />
+          Recursos
+        </h4>
+        <ul class="mt-4 space-y-2 pl-8">
+          <li>
+            <a href="#"
+              class="text-slate-600 text-base hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">Casos
+              de éxito</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-slate-600 text-base hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">FAQ</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-slate-600 text-base hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">Únete
+              a SOE</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-slate-600 text-base hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">Soporte
+              técnico</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-slate-600 text-base hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Aviso legal -->
+      <div class="lg:col-span-2 col-span-1">
+        <h4 class="flex items-center gap-2 text-slate-800 text-lg font-semibold font-Inter leading-normal">
+          <img src="./images/shield-tick.svg" alt="shield-tick" />
+          Aviso legal
+        </h4>
+        <ul class="mt-4 space-y-2 pl-8">
+          <li>
+            <a href="#"
+              class="text-slate-600 text-base hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">Aviso
+              de privacidad</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-slate-600 text-base hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">Política
+              de cookies</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-slate-600 text-base hover:text-slate-500 active:text-slate-500 focus:text-slate-500 transition-colors duration-300">Términos
+              y condiciones</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- copyright start  -->
+    <div class="py-12 bg-cyan-900 border-t border-gray-200">
+      <div
+        class="container flex flex-row flex-wrap md:justify-between justify-center gap-6 md:text-start text-center items-center">
+        <p class="text-gray-200 text-sm font-normal leading-tight">
+          © <span id="year"></span> SOE - Software Empresarial. Todos los
+          derechos reservados.
+        </p>
+        <ul class="flex flex-row gap-6 items-center md:justify-start justify-center md:m-0 m-auto">
+          <li>
+            <a href=""><img src="./images/facebook.svg" alt="facebook" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./images/twitter.svg" alt="twitter" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./images/tiktok.svg" alt="tiktok" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- copyright end -->
+  </footer>
+
+  <script src="./slick/jquery.min.js"></script>
+
+  <script src="./slick/slick.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  <script src="./js/index.js"></script>
+  <script>
+    $('.frecuentes-wrapper').slick({
+      dots: false,
+      centerMode: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      infinite: true,
+      prevArrow: '.fPrev',
+      swipeToSlide: true,
+      nextArrow: '.fNext',
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1160,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            centerMode: true,
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOE</title>
+
+  <!-- favicon  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- custom font start  -->
+  <link rel="stylesheet" href="./fonts/web-clash-display/css/clash-display.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
+    <img src="./images/soe-logo.png" alt="logo">
+    <div
+      class="w-16 h-16 border-4 border-gray-300 rounded-full spinner border-t-blue-500 absolute left-0 right-0 m-auto">
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white py-2.5 sticky top-0 z-30 lg:shadow-none shadow-xl">
+    <!-- desktop nav -->
+    <div class="container flex flex-row justify-between gap-5 lg:gap-8 items-center">
+      <a href="index.html"><img src="./images/soe-logo.png" alt="gembet" class="xl:w-auto w-[116px]" /></a>
+
+      <div class="md:hidden">
+        <button
+          class="justify-center text-text-body-primary text-xs font-medium font-Inter leading-none text-center flex flex-col gap-1"
+          data-mobile-menu-toggle="">
+          <img src="./images/menu.svg" alt="menu" />
+        </button>
+      </div>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-4 items-center">
+        <ul class="flex flex-row gap-5 lg:gap-8 items-center">
+          <li>
+            <a href="./development.html"
+              class="text-slate-800 text-base lg:text-lg font-medium leading-7 transition-all px-1.5 py-1  hover:text-slate-500 active:text-slate-500 focus:text-slate-500 ">Desarrollo</a>
+          </li>
+          <li class="relative dropdown transition-all">
+            <button
+              class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-slate-800 text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1  hover:text-slate-500"
+              data-dropdown>
+              Sector salud
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                class="transition-all">
+                <path d="M4 6L8 10L12 6" stroke="#425464" stroke-width="1.75" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu dropdown-content transition-all right-0 w-[250px] p-3 bg-white rounded-xl shadow-custom absolute">
+              <ul class="flex flex-col">
+                <li>
+                  <a href="./systems.html"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                    Sistemas RIS y PACs
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./partner.html"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                    Growth partner
+                  </a>
+                </li>
+                <li>
+                  <a href="./call-center.html"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                    Call center
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="relative dropdown transition-all">
+            <button
+              class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-slate-800 text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1  hover:text-slate-500"
+              data-dropdown>
+              Sector empresarial
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                class="transition-all">
+                <path d="M4 6L8 10L12 6" stroke="#425464" stroke-width="1.75" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu dropdown-content transition-all right-0 w-[250px] p-3 bg-white rounded-xl shadow-custom absolute">
+              <ul class="flex flex-col">
+                <li>
+                  <a href="./hardware.html"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                    Hardware corporativo
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./soluciones.html"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                    Provisión de tecnología 
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="relative dropdown group transition-all">
+            <button
+              class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-lg font-medium leading-7 px-2 lg:px-4 py-1 gap-1 bg-slate-500 rounded-lg linkify"
+              data-href="./contactanos.html" data-dropdown>
+              Contáctanos
+            </button>
+            <div
+              class="dropdown-menu dropdown-content absolute group-hover:!block transition-all right-0 w-[350px] p-3 bg-white rounded-xl shadow-custom">
+              <ul class="flex flex-col">
+                <li>
+                  <a href="mailto:+52 664 980 03 03"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="">
+                      <img src="./images/call.svg" alt="call" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">Atención telefónica</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">+52 (664) 980 03 03</span>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://wa.link/tjyxcl"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="">
+                      <img src="./images/whatsapp-dropdown.svg" alt="whatsapp" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">WhatsApp</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">+52 (664) 980 03 03</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info@soe.com.mx"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="">
+                      <img src="./images/mail-dropdown.svg" alt="mail" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">Enviar mensaje</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">info@soe.com.mx</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href=""
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="">
+                      <img src="./images/location-dropdown.svg" alt="location" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">Dirección</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">Calle Ejemplo #123,
+                        Tijuana, B.C.</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile Offcanvas -->
+    <div class="offcanvas fixed inset-0 bg-white bg-opacity-50 h-screen overflow-y-auto z-50 md:hidden" id="mobileMenu">
+      <div class="bg-white w-full max-w-full h-full py-4 relative">
+        <div class="flex flex-row items-center justify-between px-4">
+          <a href="">
+            <img src="./images/soe-logo.png" alt="logo" class="w-[120px]" />
+          </a>
+          <button class="cursor-pointer" data-close-mobile>
+            <img src="./images/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="mt-5 px-4">
+          <nav class="flex space-x-4 items-center">
+            <ul class="flex flex-col gap-5">
+              <li class="flex flex-col justify-start text-start">
+                <a href="./development.html"
+                  class="text-slate-800 text-base lg:text-lg font-medium leading-7 transition-all px-1.5 py-1  hover:text-slate-500 active:text-slate-500 focus:text-slate-500 ">Desarrollo</a>
+              </li>
+
+              <li class="relative dropdown transition-all flex flex-col justify-start">
+                <button
+                  class="dropdown-toggle flex justify-start items-center transition-all cursor-pointer text-slate-800 text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1  hover:text-slate-500 active:text-slate-500 focus:text-slate-500 "
+                  data-dropdown>
+                  Sector salud
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    class="transition-all">
+                    <path d="M4 6L8 10L12 6" stroke="#425464" stroke-width="1.75" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <div class="dropdown-menu dropdown-content transition-all w-full p-3 rounded-xl">
+                  <ul class="flex flex-col">
+                    <li>
+                      <a href="./systems.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                        Sistemas RIS y PACs
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                        Growth partner
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./call-center.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                        Call center
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="relative dropdown transition-all flex flex-col justify-start">
+                <button
+                  class="dropdown-toggle flex justify-start items-center transition-all cursor-pointer text-slate-800 text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1  hover:text-slate-500 active:text-slate-500 focus:text-slate-500 "
+                  data-dropdown>
+                  Sector empresarial
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    class="transition-all">
+                    <path d="M4 6L8 10L12 6" stroke="#425464" stroke-width="1.75" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <div class="dropdown-menu dropdown-content transition-all w-full p-3 bg-white rounded-xl">
+                  <ul class="flex flex-col">
+                    <li>
+                      <a href="./hardware.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                        Hardware corporativo
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="./soluciones.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7">
+                        Provisión de tecnología 
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="pt-6">
+          <div class="border-b border-[#E7EAEC]"></div>
+          <div class="px-4 py-6 flex flex-row justify-around">
+            <ul class="space-y-3">
+              <li class="flex flex-row gap-1 items-center">
+                <img src="./images/list-menu.svg" alt="recursos" />
+                <h4 class="text-basic-black text-base font-DMSans font-medium">
+                  Recursos
+                </h4>
+              </li>
+              <li>
+                <a href="#" class="text-basic-black text-sm font-DMSans font-normal">Casos de éxito</a>
+              </li>
+              <li>
+                <a href="#" class="text-basic-black text-sm font-DMSans font-normal">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="text-basic-black text-sm font-DMSans font-normal">Únete a SOE</a>
+              </li>
+            </ul>
+            <ul class="space-y-3">
+              <li class="flex flex-row gap-1 items-center">
+                <img src="./images/shield-menu.svg" alt="recursos" />
+                <h4 class="text-basic-black text-base font-DMSans font-medium">
+                  Aviso legal
+                </h4>
+              </li>
+              <li>
+                <a href="#" class="text-basic-black text-sm font-DMSans font-normal">Aviso de privacidad</a>
+              </li>
+              <li>
+                <a href="#" class="text-basic-black text-sm font-DMSans font-normal">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="text-basic-black text-sm font-DMSans font-normal">Términos y condiciones</a>
+              </li>
+            </ul>
+          </div>
+          <div class="px-4">
+            <a href="./contactanos.html"
+              class="flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-lg font-medium leading-7 px-2 lg:px-4 py-[10px] gap-1 bg-slate-500 rounded-lg">
+              Contáctanos
+            </a>
+            <div class="pt-6">
+              <ul class="flex flex-col">
+                <li>
+                  <a href="mailto:+52 664 980 03 03"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="mt-1">
+                      <img src="./images/call.svg" alt="call" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">Atención telefónica</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">+52 (664) 980 03 03</span>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://wa.link/tjyxcl"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="mt-1">
+                      <img src="./images/whatsapp-dropdown.svg" alt="whatsapp" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">WhatsApp</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">+52 (664) 980 03 03</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info@soe.com.mx"
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="mt-1">
+                      <img src="./images/mail-dropdown.svg" alt="mail" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">Enviar mensaje</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">info@soe.com.mx</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href=""
+                    class="flex flex-row gap-3 p-3 hover:bg-zinc-200 active:bg-zinc-200 focus:bg-zinc-200 rounded-lg transition-all duration-300">
+                    <span class="mt-1">
+                      <img src="./images/location-dropdown.svg" alt="location" />
+                    </span>
+                    <span class="flex flex-col">
+                      <span class="text-slate-800 text-base lg:text-lg font-medium leading-7">Dirección</span>
+                      <span class="text-slate-600 text-base lg:text-lg font-normal leading-7">Calle Ejemplo #123,
+                        Tijuana, B.C.</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+
+    <section class="lg:py-24 py-12">
+      <div class="container flex flex-col lg:gap-24 gap-12">
+        <div class="text-center flex flex-col gap-3 justify-center">
+          <h1 class="text-slate-800 text-5xl md:text-7xl lg:text-8xl font-medium font-ClashDisplay lg:leading-[92px]">
+            Contáctanos
+          </h1>
+          <p
+            class="text-slate-600 text-base md:text-lg font-normal  leading-7 lg:w-auto w-[570px] max-w-full lg:m-0 m-auto">
+            ¿Tienes preguntas o necesitas
+            asesoría? Nuestro equipo está aquí para ayudarte.</p>
+        </div>
+        <div class="xl:gap-24 gap-12 grid lg:grid-cols-2 grid-cols-1">
+          <div class="col-span-1">
+            <div class="grid grid-cols-2 gap-3">
+              <!-- single item start -->
+              <div class="h-72 p-4 bg-zinc-200 rounded-xl flex flex-col justify-between items-start">
+                <div class="">
+                  <img src="./images/phone-round.svg" alt="phone">
+                </div>
+                <div class="flex flex-col gap-3">
+                  <h4 class="text-slate-500 text-xl lg:text-2xl font-medium font-ClashDisplay lg:leading-9">Teléfono
+                  </h4>
+                  <a href="tel:+52 664 980 03 03"
+                    class="text-slate-800 text-base lg:text-lg font-normal  lg:leading-7">+52
+                    (664) 980 03
+                    03</a>
+                </div>
+              </div>
+              <!-- single item end -->
+
+              <!-- single item start -->
+              <div class="h-72 p-4 bg-zinc-200 rounded-xl flex flex-col justify-between items-start">
+                <div class="">
+                  <img src="./images/whatsapp-round.svg" alt="whatsapp">
+                </div>
+                <div class="flex flex-col gap-3">
+                  <h4 class="text-slate-500 text-xl lg:text-2xl font-medium font-ClashDisplay lg:leading-9">WhatsApp
+                  </h4>
+                  <a href="https://wa.link/tjyxcl"
+                    class="text-slate-800 text-base lg:text-lg font-normal  lg:leading-7">+52
+                    (664) 980 03 03</a>
+                </div>
+              </div>
+              <!-- single item end -->
+              <!-- single item start -->
+              <div class="h-72 p-4 bg-zinc-200 rounded-xl flex flex-col justify-between items-start">
+                <div class="">
+                  <img src="./images/mail-round.svg" alt="mail">
+                </div>
+                <div class="flex flex-col gap-3">
+                  <h4 class="text-slate-500 text-xl lg:text-2xl font-medium font-ClashDisplay lg:leading-9">E-mail
+                  </h4>
+                  <a href="mailto:info@soe.com.mx"
+                    class="text-slate-800 text-base lg:text-lg font-normal  lg:leading-7">info@soe.com.mx</a>
+                </div>
+              </div>
+              <!-- single item end -->
+              <!-- single item start -->
+              <div class="h-72 p-4 bg-zinc-200 rounded-xl flex flex-col justify-between items-start">
+                <div class="">
+                  <img src="./images/phone-round.svg" alt="phone">
+                </div>
+                <div class="flex flex-col gap-3">
+                  <h4 class="text-slate-500 text-xl lg:text-2xl font-medium font-ClashDisplay lg:leading-9">Dirección
+                  </h4>
+                  <a href="" class="text-slate-800 text-base lg:text-lg font-normal  lg:leading-7">Calle
+                    Ejemplo
+                    #123,
+                    Tijuana, B.C.</a>
+                </div>
+              </div>
+              <!-- single item end -->
+            </div>
+          </div>
+          <div class="col-span-1">
+            <form id="contactForm" novalidate class="lg:w-auto w-[540px] max-w-full lg:m-0 m-auto">
+
+              <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
+                <!-- single item start  -->
+                <div class="col-span-1 flex flex-col gap-1">
+                  <label for="" class="text-slate-800 text-base lg:text-lg font-normal  lg:leading-7">Nombre</label>
+                  <input type="text" name="name" placeholder="Nombre" required
+                    class="w-full border border-gray-400  bg-white rounded-md px-3.5 py-2.5 justify-start text-gray-400 text-lg font-normal  leading-7" />
+                  <p class="text-red-500 text-sm hidden mt-1">Nombre</p>
+                </div>
+                <!-- single item end -->
+
+                <!-- single item start  -->
+                <div class="col-span-1 flex flex-col gap-1">
+                  <label for="" class="text-slate-800 text-base lg:text-lg font-normal  lg:leading-7">Compañía</label>
+                  <input type="text" name="company" placeholder="Nombre de la empresa"
+                    class="border border-gray-400  bg-white rounded-md px-3.5 py-2.5 w-full justify-start text-gray-400 text-lg font-normal  leading-7" />
+                </div>
+                <!-- single item end -->
+
+                <!-- single item start  -->
+                <div class="md:col-span-2 flex flex-col gap-1">
+                  <label for="" class="text-slate-800 text-base lg:text-lg font-normal  lg:leading-7">Teléfono</label>
+
+                  <div class="relative">
+                    <div
+                      class="absolute w-[55px] left-0 top-0 after:absolute after:bg-[url('../images/chevron-down.svg')] after:bg-no-repeat after:w-4 after:h-4 after:right-0 after:top-1/2 after:-translate-y-1/2 h-full">
+                      <select id="country" name="country" required
+                        class="border-0 outline-0 ring-0 rounded px-3 py-2 appearance-none w-full text-slate-600 text-lg font-normal  leading-7 h-full relative z-20">
+                        <!-- Injected by JS -->
+                      </select>
+                    </div>
+                    <input id="phone" name="phone" type="tel" required
+                      class=" pl-[70px] pr-3.5 py-2.5 w-full border border-gray-400  bg-white rounded-md px-[14px] justify-start text-gray-400 text-lg font-normal  leading-7" />
+
+                  </div>
+                  <p id="phoneError" class="text-red-500 text-sm hidden">Número de teléfono inválido.</p>
+                </div>
+                <!-- single item end -->
+                <!-- single item start  -->
+                <div class="md:col-span-2 flex flex-col gap-1">
+                  <label for="" class="text-slate-800 text-base lg:text-lg font-normal  lg:leading-7">WhatsApp</label>
+                  <input name="whatsapp" type="tel" placeholder="WhatsApp (+xxx)"
+                    class="w-full border border-gray-400  bg-white rounded-md px-3.5 py-2.5 justify-start text-gray-400 text-lg font-normal  leading-7" />
+                </div>
+                <!-- single item end -->
+                <!-- single item start  -->
+                <div class="md:col-span-2 flex flex-col gap-1">
+                  <label for="" class="text-slate-800 text-base lg:text-lg font-normal  lg:leading-7">Correo
+                    electrónico</label>
+                  <input name="email" type="email" placeholder="ejemplo@mail.com" required
+                    class="w-full border border-gray-400  bg-white rounded-md px-3.5 py-2.5 justify-start text-gray-400 text-lg font-normal  leading-7" />
+                  <p class="text-red-500 text-sm hidden mt-1">Ingrese un correo electrónico válido.</p>
+                </div>
+                <!-- single item end -->
+
+                <!-- single item start  -->
+                <div class="md:col-span-2 flex flex-col gap-1">
+                  <label for="" class="text-slate-800 text-base lg:text-lg font-normal  lg:leading-7">Tipo de
+                    solicitud</label>
+                  <div
+                    class="relative after:absolute after:bg-[url('../images/chevron-down.svg')] after:bg-no-repeat after:w-4 after:h-4 after:right-3 after:top-1/2 after:-translate-y-1/2 ">
+                    <select name="type" required
+                      class="w-full border border-gray-400  bg-white rounded-md px-3.5 py-2.5 justify-start text-gray-400 text-lg font-normal  leading-7 appearance-none">
+                      <option value="" disabled selected>Tipo de solicitud</option>
+                      <option value="consulta">Consulta</option>
+                      <option value="soporte">Soporte</option>
+                      <option value="ventas">Ventas</option>
+                    </select>
+                  </div>
+                  <p class="text-red-500 text-sm hidden mt-1">Seleccione un tipo de solicitud.</p>
+                </div>
+                <!-- single item end -->
+
+                <!-- single item start  -->
+                <div class="md:col-span-2  flex flex-col gap-1">
+                  <label for=""
+                    class="text-slate-800 text-base lg:text-lg font-normal  lg:leading-7">Descripción</label>
+                  <textarea name="message" placeholder="Detalles de tu solicitud" required
+                    class="h-24 w-full border border-gray-400  bg-white rounded-md px-3.5 py-2.5 justify-start text-gray-400 text-lg font-normal  leading-7"></textarea>
+                  <p class="text-red-500 text-sm hidden mt-1">Por favor, escribe un mensaje.</p>
+                </div>
+                <!-- single item end -->
+                <!-- single item start  -->
+                <div class="md:col-span-2 flex flex-col gap-1">
+                  <div class="flex flex-row items-center gap-3">
+                    <input id="privacy" type="checkbox" class="form-checkbox w-5 h-5" />
+                    <label for="privacy" class="text-slate-600 text-base font-normal  leading-normal">Aceptas
+                      nuestra amigable <a href="#" class="text-slate-500 underline">política de privacidad</a>.</label>
+                  </div>
+                  <p id="privacyError" class="text-red-500 text-sm hidden">Debe aceptar la política de privacidad.</p>
+                </div>
+                <!-- single item end -->
+                <div class="md:col-span-2">
+                  <button type="submit"
+                    class="w-full min-h-16 p-4 bg-slate-500 rounded-lg flex flex-col cursor-pointer items-center gap-3.5 text-center justify-center text-white text-lg font-medium  leading-7  hover:text-slate-500 active:text-slate-500 hover:bg-white hover:shadow hover:outline focus:text-slate-500 focus:bg-white focus:shadow transition-colors duration-300">
+                    Enviar
+                  </button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class=" bg-zinc-200 bg-[url('../images/shape-footer.svg')] bg-no-repeat bg-right-top">
+    <div
+      class="container pt-[60px] md:pt-24 pb-12 grid lg:grid-cols-12 sm:grid-cols-3 grid-cols-2 lg:gap-6 gap-y-12 gap-x-3">
+      <!-- single item start  -->
+      <div class="xl:col-span-4 sm:col-span-3 col-span-2 flex flex-col gap-9">
+        <div>
+          <a href="">
+            <img src="./images/soe-logo.png" alt="soe-logo">
+          </a>
+        </div>
+        <ul class="flex flex-col gap-4">
+          <li><a href="mailto:info@soe.com.mx"
+              class="flex flex-row items-center gap-1.5 text-slate-800 text-base font-normal  leading-normal  hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">
+              <span>
+                <img src="images/mail.svg" alt="mail">
+              </span>
+              <span>
+                info@soe.com.mx</span>
+            </a></li>
+
+          <li><a href=""
+              class="flex flex-row items-center gap-1.5 text-slate-800 text-base font-normal  leading-normal  hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">
+              <span>
+                <img src="images/location.svg" alt="location">
+              </span>
+              <span>
+                Calle Ejemplo #123, Tijuana, B.C.</span>
+            </a></li>
+          <li><a href="tel:+52 664 980 03 03"
+              class="flex flex-row items-center gap-1.5 text-slate-800 text-base font-normal  leading-normal  hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">
+              <span>
+                <img src="images/phone.svg" alt="phone">
+              </span>
+              <span>
+                +52 (664) 980 03 03</span>
+            </a></li>
+
+        </ul>
+      </div>
+      <!-- single item end -->
+
+      <!-- Enlaces rápidos -->
+      <div class="lg:col-span-3 col-span-1">
+        <h4 class="flex items-center gap-2 text-slate-800 text-lg font-semibold font-Inter leading-normal">
+          <img src="./images/link.svg" alt="link" />
+          Enlaces rápidos
+        </h4>
+        <ul class="mt-4 space-y-2 pl-8">
+          <li><a href="#"
+              class="text-slate-600 text-base   hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">Desarrollo</a>
+          </li>
+          <li><a href="#"
+              class="text-slate-600 text-base   hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">Sistemas
+              RIS y PACs</a></li>
+          <li><a href="#"
+              class="text-slate-600 text-base   hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">Growth
+              partner</a></li>
+          <li><a href="#"
+              class="text-slate-600 text-base   hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">Call
+              center</a></li>
+          <li><a href="#"
+              class="text-slate-600 text-base   hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">Hardware
+              corporativo</a></li>
+          <li><a href="#"
+              class="text-slate-600 text-base   hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">Provisión
+              de tecnología</a></li>
+        </ul>
+      </div>
+
+      <!-- Recursos -->
+      <div class="lg:col-span-3 col-span-1">
+        <h4 class="flex items-center gap-2 text-slate-800 text-lg font-semibold font-Inter leading-normal">
+          <img src="./images/recursos.svg" alt="recursos" />
+          Recursos
+        </h4>
+        <ul class="mt-4 space-y-2 pl-8">
+          <li><a href="#"
+              class="text-slate-600 text-base   hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">Casos
+              de
+              éxito</a></li>
+          <li><a href="#"
+              class="text-slate-600 text-base   hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">FAQ</a>
+          </li>
+          <li><a href="#"
+              class="text-slate-600 text-base   hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">Únete
+              a
+              SOE</a></li>
+          <li><a href="#"
+              class="text-slate-600 text-base   hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">Soporte
+              técnico</a></li>
+          <li><a href="#"
+              class="text-slate-600 text-base   hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Aviso legal -->
+      <div class="lg:col-span-2 col-span-1">
+        <h4 class="flex items-center gap-2 text-slate-800 text-lg font-semibold font-Inter leading-normal">
+          <img src="./images/shield-tick.svg" alt="shield-tick" />
+          Aviso legal
+        </h4>
+        <ul class="mt-4 space-y-2 pl-8">
+          <li><a href="#"
+              class="text-slate-600 text-base   hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">Aviso
+              de
+              privacidad</a></li>
+          <li><a href="#"
+              class="text-slate-600 text-base   hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">Política
+              de cookies</a></li>
+          <li><a href="#"
+              class="text-slate-600 text-base   hover:text-slate-500 active:text-slate-500 focus:text-slate-500  transition-colors duration-300">Términos
+              y condiciones</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+    <!-- copyright start  -->
+    <div class="py-12 bg-cyan-900 border-t border-gray-200 ">
+      <div
+        class="container flex flex-row flex-wrap md:justify-between justify-center gap-6 md:text-start text-center items-center">
+        <p class="text-gray-200 text-sm font-normal  leading-tight">© <span id="year"></span> SOE -
+          Software
+          Empresarial. Todos los derechos reservados.</p>
+        <ul class="flex flex-row gap-6 items-center md:justify-start justify-center md:m-0 m-auto">
+          <li><a href=""><img src="./images/facebook.svg" alt="facebook"></a></li>
+          <li><a href=""><img src="./images/twitter.svg" alt="twitter"></a></li>
+          <li><a href=""><img src="./images/tiktok.svg" alt="tiktok"></a></li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- copyright end -->
+  </footer>
+
+
+  <script src="./js/index.js"></script>
+  <script src="./js/from-validatioin.js"></script>
+
+</body>
+
+</html>
